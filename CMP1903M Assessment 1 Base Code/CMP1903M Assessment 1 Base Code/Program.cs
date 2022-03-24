@@ -9,26 +9,32 @@ namespace CMP1903M_Assessment_1_Base_Code
 {
     class Program
     {
-        static void Main()
+        
+        public static void Main(string[] args)
         {
-            //Local list of integers to hold the first five measurements of the text
-            List<int> parameters = new List<int>();
-            //Create 'Input' object
-            //Get either manually entered text, or text from a file
-            //Create an 'Analyse' object
-            //Pass the text input to the 'analyseText' method
-            //Receive a list of integers back
-            //Report the results of the analysis
-            Report report = new Report();
-            report.decision();
-            report.report();
+            Console.WriteLine("Welcome to my analyse program. Would you like to analyse a downloaded file or enter some text manualy? Enter 'file' for the first option" +
+            " or 'manual' for the second option.");
 
-            //TO ADD: Get the frequency of individual letters?
+            var answer = Console.ReadLine();
+            var program = new Program();
+            answer.ToLower();
+            var input = new Input();
+            switch (answer)
+            {
+                case "manual":
+                    input.ManualTextInput();
+                    break;
 
-           
+                case "file":
+                    input.fileTextInput();
+                    break;
+                default:
+                    Console.WriteLine("Error Occured");
+                    break;
+            }
         }
-        
-        
-    
+
+        //eg.   public void outputConsole(List<int>)
+
     }
 }
