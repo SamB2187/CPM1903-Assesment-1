@@ -11,13 +11,13 @@ namespace CMP1903M_Assessment_1_Base_Code
 
         public string answer;
         //Handles the reporting of the analysis
-        public void decision()
+        public void decision()//NEW METHOD
         {
             Console.WriteLine("Welcome to my analyse program. Would you like to analyse a downloaded file or enter some text manualy? Enter 'file' for the first option or 'manual' for the second option.");
             Console.WriteLine("");
             answer = Console.ReadLine();
         }
-        public void report()
+        public void report()//NEW METHOD
         {
 
 

@@ -29,10 +29,10 @@ namespace CMP1903M_Assessment_1_Base_Code
             {
                 case "": //This is to stop an error from occuring
                     Console.WriteLine("");
-                    Console.WriteLine("Text was not detected. Try again please");
+                    Console.WriteLine("Text was not detected.");
                     Console.WriteLine("");
-                    Report report = new Report();
-                    report.decision();
+                    
+                  
                     break;
 
                 default:
