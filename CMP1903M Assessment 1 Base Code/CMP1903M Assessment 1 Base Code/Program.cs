@@ -11,21 +11,13 @@ namespace CMP1903M_Assessment_1_Base_Code
     {
         static void Main()
         {
-            //Local list of integers to hold the first five measurements of the text
-            List<int> parameters = new List<int>();
-            //Create 'Input' object
-            //Get either manually entered text, or text from a file
-            //Create an 'Analyse' object
-            //Pass the text input to the 'analyseText' method
-            //Receive a list of integers back
-            //Report the results of the analysis
+
             Report report = new Report();
+            //This will give the user the decision on what they want to ananlyse
             report.decision();
+            //This will give anylsed information back to the user
             report.report();
 
-            //TO ADD: Get the frequency of individual letters?
-
-           
         }
         
         
